@@ -106,8 +106,8 @@
         
     
     <div class="row mb-3 mt-5">
-        <div class="col-12 col-md-4 mb-2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-12 col-md-4 mb-5">
+            <div class="card" >
                 <img src="cuchillo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -116,8 +116,8 @@
                 </div>
               </div> 
         </div>
-        <div class="col-12 col-md-4 mb-2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-12 col-md-4 mb-5">
+            <div class="card">
                 <img src="cuchillo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -126,8 +126,8 @@
                 </div>
               </div>
         </div>
-        <div class="col-12 col-md-4 mb-2">
-            <div class="card" style="width: 18rem;">
+        <div class="col-12 col-md-4 mb-5">
+            <div class="card">
                 <img src="cuchillo.jpg" class="card-img-top"  alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
