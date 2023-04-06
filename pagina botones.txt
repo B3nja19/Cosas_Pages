@@ -1,0 +1,5 @@
+ <div class="row mt-2">
+        <div class="col-12 col-md-2 offset-md-2">botones</div>
+        <div class="col-12 col-md-6">
+            <input type="submit" name="btnAceptar" class="btn btn-success" values="Aceptar">
+            <button class="btn btn-outline-danger">Enviar</button>
