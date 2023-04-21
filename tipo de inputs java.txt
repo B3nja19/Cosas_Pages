@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="paginajava2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Tipos Inputs</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="form-group">
+                    <label for="numero1">Número 1</label>
+                    <input type="number" name="numero1" id="numero1" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="numero2">Número 2</label>
+                    <input type="number" name="numero2" id="numero2" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="numero2">Opciones</label>
+                    <button class="btn btn-danger float-end" onclick="sumar()">Sumar</button>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="numero2">Opciones</label>
+                    <button class="btn btn-success float-end" onclick="restar()">Restar</button>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="numero2">Opciones</label>
+                    <button class="btn btn-warning float-end" onclick="multiplicar()">Multiplicar</button>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="numero2">Opciones</label>
+                    <button class="btn btn-primary float-end" onclick="dividir()">Dividir</button>
+                </div>
+                <div class="form-group mt-5 text-center">
+                    <label for="resultado">Resultado </label>
+                    <input type="number" name="resultado" id="resultado" class="form-control">
+                </div>
+                <div class="form-group mt-2 text-center">
+                    <button class="btn btn-outline-secondary from-control btn-lg" onclick="limpiar()">limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
