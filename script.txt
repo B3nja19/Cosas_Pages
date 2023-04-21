@@ -1,0 +1,43 @@
+function sumar()
+{
+    let n1 = document.getElementById("numero1").value;
+    let n2 = document.getElementById("numero2").value;
+    let total = parseInt("0" + n1) +  parseInt("0" + n2);
+    alert("El total de la suma es: " + total);
+    document.getElementById("resultado").value=total;
+}
+function restar()
+{
+    let n1 = document.getElementById("numero1").value;
+    let n2 = document.getElementById("numero2").value;
+    let total = parseInt("0" + n1) -  parseInt("0" + n2);
+    alert("El total de la resta es: " + total);
+    document.getElementById("resultado").value=total;
+}
+function multiplicar()
+{
+    let n1 = document.getElementById("numero1").value;
+    let n2 = document.getElementById("numero2").value;
+    let total = parseInt("0" + n1) *  parseInt("0" + n2);
+    alert("El total de la multiplicacion es: " + total);
+    document.getElementById("resultado").value=total;
+}
+function dividir()
+{
+    let n1 = document.getElementById("numero1").value;
+    let n2 = document.getElementById("numero2").value;
+    let total = parseInt("0" + n1) /  parseInt("0" + n2);
+    if(n2==0)
+    {
+        alert("No se puede dividir por 0");
+        return;
+    }
+    alert("El total de la divir es: " + total);
+    document.getElementById("resultado").value=total;
+}
+function limpiar()
+{
+    document.getElementById("numero1").value="";
+    document.getElementById("numero2").value="";
+    document.getElementById("resultado").value="";
+}
