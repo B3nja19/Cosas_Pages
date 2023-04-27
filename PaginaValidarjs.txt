@@ -1,6 +1,10 @@
 $(function()
 {
     //Codigo jQuery o js
+
+    let emailRegex =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/
+
+
     $('.btnLimpiar').click(function(){
         $('.txtRut, .txtDv, .txtNombre, .txtEmail').val('');
         $('.txtRut').focus();
@@ -60,9 +64,9 @@ $(function()
             alert("Falta especificar el Nombre")
             $('.txtNombre').focus();
         }
-        else if(!$('.txtEmail').val())
+        else if(! emailRegex.test($('.txtEmail').val()))
         {
-            alert("Falta especificar el Email")
+            alert("El formato del correo no es valido")
             $('.txtEmail').focus();
         }
     })
@@ -71,4 +75,5 @@ $(function()
 
 
 esta parte va con la pagina jquery validar 
-valida el rut el dv el nombre y el email, y agregamos el boton limpiar 
+valida el rut el dv el nombre y el email, y agregamos el boton limpiar y validar el correo 
+/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/ expresion regular
