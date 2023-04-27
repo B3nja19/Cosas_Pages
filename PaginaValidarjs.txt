@@ -1,6 +1,12 @@
 $(function()
 {
     //Codigo jQuery o js
+    $('.btnLimpiar').click(function(){
+        $('.txtRut, .txtDv, .txtNombre, .txtEmail').val('');
+        $('.txtRut').focus();
+
+    })
+
     let numeros = '0123456789';
     let letras ='qwertyuiopasdfghjklñzxcvbnmQWERTYUIOPASDFGHJKLÑZXCVBNMÁÉÍÓÚáéíóú';
 
@@ -65,4 +71,4 @@ $(function()
 
 
 esta parte va con la pagina jquery validar 
-valida el rut el dv el nombre y el email
+valida el rut el dv el nombre y el email, y agregamos el boton limpiar 
