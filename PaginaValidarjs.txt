@@ -1,0 +1,68 @@
+$(function()
+{
+    //Codigo jQuery o js
+    let numeros = '0123456789';
+    let letras ='qwertyuiopasdfghjklñzxcvbnmQWERTYUIOPASDFGHJKLÑZXCVBNMÁÉÍÓÚáéíóú';
+
+    $('.txtRut').keypress(function(e)
+    {
+        let caracter = String.fromCharCode(e.which);
+        if(numeros.indexOf(caracter)< 0)
+        return false;
+    });
+    $('.txtDv').keypress(function(e)
+    {
+        let patron = numeros + 'kK';
+        let caracter = String.fromCharCode(e.which);
+        if(patron.indexOf(caracter)< 0)
+        return false;
+    });
+    $('.txtNombre').keypress(function(e)
+    {
+        let caracter = String.fromCharCode(e.which);
+        if(letras.indexOf(caracter)< 0)
+        return false;
+    });
+    $('.txtEmail').keypress(function(e)
+    {
+        let signo = letras + numeros + '@._-';
+        let caracter = String.fromCharCode(e.which);
+        if(signo.indexOf(caracter)< 0)
+        return false;
+    });
+
+
+
+
+
+    //Validacion campos vacios
+    $('.btnEnviar').click(function()
+    {
+
+        if(!$('.txtRut').val())
+        {
+            alert("Falta especificar el rut")
+            $('.txtRut').focus();
+        }
+        else if(!$('.txtDv').val())
+        {
+            alert("Falta especificar el DV")
+            $('.txtDv').focus();
+        }
+        else if(!$('.txtNombre').val())
+        {
+            alert("Falta especificar el Nombre")
+            $('.txtNombre').focus();
+        }
+        else if(!$('.txtEmail').val())
+        {
+            alert("Falta especificar el Email")
+            $('.txtEmail').focus();
+        }
+    })
+
+})
+
+
+esta parte va con la pagina jquery validar 
+valida el rut el dv el nombre y el email
